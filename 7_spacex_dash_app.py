@@ -109,7 +109,6 @@ def get_pie_chart(entered_site, slider_payload):
         )
         return fig
     else:
-        # return the outcomes piechart for a selected site
         filtered_df = filtered_df[ spacex_df['Launch Site'] == entered_site ]
         fig = px.scatter(filtered_df,
             x = 'Payload Mass (kg)',
